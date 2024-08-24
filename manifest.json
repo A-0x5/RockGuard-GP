@@ -1,5 +1,5 @@
 {
-    "manifest_version":  4,
+    "manifest_version": 5,
     "name": "RockGaurd",
     "description": "Extension tool to detect phishing websites",
     "version": "1.0",
