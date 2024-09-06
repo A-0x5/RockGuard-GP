@@ -1,11 +1,16 @@
 {
-    "manifest_version": 5,
+   "manifest_version": 3,
     "name": "RockGaurd",
     "description": "Extension tool to detect phishing websites",
     "version": "1.0",
     "action": {
       "default_popup": "popup/popup.html",
-      "default_icon": "icon-11.png"
+      "default_icon": "images/icon-128.png" 
+         
+    },
+    
+    "permissions": ["activeTab"]
+}
 
-    }
-  }
+    
+  
