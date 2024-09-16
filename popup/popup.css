@@ -76,6 +76,7 @@ body {
     color: #000;
     text-decoration: none;
 }
+<<<<<<< HEAD
 /* Gray background for the content */
 body {
     background-color: #f0f0f0; /* Light gray background for the content */
@@ -114,3 +115,5 @@ body {
 .tooltip a:hover {
     color: #ff00ff; /* Optional: Hover effect to give visual feedback */
 }
+=======
+>>>>>>> 300775e1ee3ed157559b3ef46805858649dece24

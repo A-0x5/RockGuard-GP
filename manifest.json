@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "manifest_version": 3,
   "name": "RockGuard Original",
   "description": "Extension tool to detect phishing websites",
@@ -40,4 +41,20 @@
 
 
 
+=======
+   "manifest_version": 3,
+    "name": "RockGaurd",
+    "description": "Extension tool to detect phishing websites",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": "images/icon-128.png" 
+         
+    },
+    
+    "permissions": ["activeTab"]
+}
+
+    
+>>>>>>> 300775e1ee3ed157559b3ef46805858649dece24
   
