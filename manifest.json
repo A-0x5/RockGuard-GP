@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "RockGuard Original",
+  "description": "Extension tool to detect phishing websites",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": ["scripts/content.js"],
+      "css": ["popup/popup.css"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "host_permissions": [
+    "https://www.google.com/*",
+    "https://www.virustotal.com/*",
+    "http://localhost/*"
+  ]
+}
+
+
+
+
+
+
+  

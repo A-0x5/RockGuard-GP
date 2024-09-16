@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.container {
+    width: 300px;
+    margin: 50px auto;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.subtitle {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.description {
+    font-size: 12px;
+    color: #666;
+    margin: 10px 0;
+}
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.toggle-btn i {
+    font-size: 26px;
+    margin-right: 10px;
+}
+.toggle-switch {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+
+    margin: 0 auto;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+            display: inline-block;
+}
+.toggle-btn {
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer {
+    font-size: 12px;
+    margin-top: 20px;
+}
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
+/* Gray background for the content */
+body {
+    background-color: #f0f0f0; /* Light gray background for the content */
+}
+
+/* Tooltip styling */
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #4b4b4b; /* Dark background color */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: normal; /* Allow text to wrap */
+    z-index: 99999; /* Ensure the tooltip appears above everything */
+    font-size: 16px;
+    line-height: 1.7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Set a fixed width for the tooltip */
+    max-width: 350px; /* Optional: set a max-width */
+    opacity: 0; /* Hidden by default for smooth appearance */
+    transition: opacity 0.2s ease-in-out; /* Smooth fade-in */
+    pointer-events: auto; /* Allow interactions (like clicking on the link) */
+    text-align: left; /* Ensure text aligns from left to right */
+}
+
+/* Ensure the tooltip link is clickable */
+.tooltip a {
+    text-decoration: underline;
+    color: lightblue; /* Ensure link color is visible */
+    z-index: 10000;
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip a:hover {
+    color: #ff00ff; /* Optional: Hover effect to give visual feedback */
+}

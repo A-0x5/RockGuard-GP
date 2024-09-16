@@ -1,0 +1,1039 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background: radial-gradient(circle at 12% 24%, #252424, #141414 99%) !important;
+    min-height: 100vh;
+}
+
+.red-border {
+    border-color: #f95959 !important;
+}
+
+
+/********************************************************************* navbar */
+
+.navbar {
+    z-index: 100;
+}
+
+.navbar .collapse {
+    align-self: flex-start;
+}
+
+.navbar .collapse .nav-link {
+    display: flex;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.navbar .collapse .nav-link li {
+    padding-top: 5px;
+    margin-right: 2.5rem;
+}
+
+.navbar .collapse .nav-link .nav-item a {
+    color: #e9e9e9;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: .95rem;
+}
+
+.navbar .collapse .nav-link .nav-item a.active {
+    border-top: 4px solid;
+    border-color: #553764;
+    padding-top: 10px;
+    color: #fff0f0;
+}
+
+.navbar .collapse .nav-link .nav-item a:hover {
+    border-top: 4px solid;
+    border-color: #553764;
+    padding-top: 10px;
+    color: #fff0f0;
+    transition: 0.15s ease-in-out;
+}
+
+.navbar .btn-login {
+    padding: 4px 10px;
+}
+
+.navbar .btn-register {
+    background: rgb(85 55 100);
+    padding: 4px 10px;
+}
+
+
+/********************************************************************* User profile */
+
+.profile-dropdown .dropdown-menu {
+    background: radial-gradient(circle at 29% 68%, #252421, #141414 99%) !important;
+    min-width: 16rem;
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+.profile-dropdown .profile-image {
+    padding-top: 5px;
+    display: block;
+}
+
+.profile-dropdown .dropdown-menu :hover {
+    background-color: inherit;
+}
+
+.profile-dropdown .dropdown-item-hover :hover {
+    color: rgb(200 102 249) !important;
+}
+
+.profile-dropdown .dropdown-item-hover .dropdown-item.active-h {
+    color: rgb(200 102 249) !important;
+}
+
+.profile-dropdown .dropdown-menu .dropdown-item {
+    color: #dfdfdf;
+    font-size: .85rem;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+
+.profile-dropdown .dropdown-menu .dropdown-header {
+    font-size: 1.35rem;
+    letter-spacing: 1.5px;
+}
+
+.profile-dropdown .dropdown-divider {
+    height: 0;
+    margin: .65rem 0;
+    overflow: hidden;
+    border-top: 1px solid #90a0a3;
+}
+
+
+/********************************************************************* Sign in */
+
+.wrapper-sign {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-sign .sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper-sign .sign-in .image-area {
+    max-width: 500px;
+}
+
+.wrapper-sign .sign-in .form-area {
+    width: 385px;
+    margin-top: 2.5rem;
+}
+
+.wrapper-sign .sign-in .form-area h2 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 2.6rem;
+}
+
+.wrapper-sign .sign-in .form-area span {
+    display: inline-block;
+    color: #fdfdfd;
+    text-align: center;
+    width: 100%;
+    margin-top: .5rem;
+    letter-spacing: 1px;
+    font-size: .75rem;
+}
+
+.wrapper-sign .sign-in .form-area form {
+    margin-top: .8rem;
+}
+
+.wrapper-sign .sign-in .form-area form label {
+    color: #e8e8e8;
+    letter-spacing: 1.5px;
+}
+
+.wrapper-sign .sign-in .form-area form .form-control {
+    padding: 0.65rem .75rem;
+    background-color: rgb(235 235 235);
+}
+
+.wrapper-sign .sign-in .form-area form .form-group .forgot-password {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: .5rem;
+    color: #9f9f9f;
+    font-size: .85rem;
+    letter-spacing: 1px;
+}
+
+.wrapper-sign .sign-in .form-area form .form-group .btn-login {
+    padding: 6px 24px;
+    font-size: 18px;
+}
+
+.wrapper-sign .sign-in .form-area form .form-group .btn-register {
+    background: rgb(85 55 100);
+    padding: 6px 24px;
+    font-size: 18px;
+}
+
+
+/********************************************************************* footer page */
+
+.footer {
+    background: radial-gradient(circle at 15% 30%, #181717, #0b0b0b 99%) !important;
+    padding: 3rem 0px 2rem;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .wrapper .title {
+    align-self: center;
+    color: #e7e7e7;
+    letter-spacing: 1.3px;
+}
+
+.footer .wrapper .links h4,
+.footer .wrapper .contact h4 {
+    letter-spacing: 1.15px;
+    color: #e7e7e7;
+}
+
+.footer .wrapper .contact a {
+    margin-top: 1.2rem;
+    color: #fff;
+    display: inline-block;
+}
+
+.footer .wrapper .links ul {
+    list-style: none;
+    margin-top: 1.2rem;
+}
+
+.footer .wrapper .links ul li a {
+    color: #fff;
+    padding-bottom: .5rem;
+    display: inline-block;
+}
+
+.footer hr {
+    border: 0;
+    border-top: 1px solid rgb(255 255 255 / 10%);
+    border-color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer .info {
+    display: flex;
+    justify-content: space-between;
+    color: #868686;
+    font-size: .7rem;
+    letter-spacing: 1.2px;
+}
+
+
+/********************************************************************* User profile */
+
+.wrapper-home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper-home .home {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/********************************************************************* About Us */
+
+.wrapper.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.wrapper.about-us h1 {
+    margin-bottom: 2.5rem;
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+.wrapper.about-us p {
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.wrapper.about-us .image-area {
+    max-width: 400px;
+}
+
+.wrapper.about-us .content {
+    width: 600px;
+    margin-top: 2.5rem;
+}
+
+
+/*********************************************************************Security Checker */
+
+.wrapper.security_checker {
+    margin-top: 6rem;
+    height: 100vh;
+}
+
+.wrapper.security_checker h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.wrapper.security_checker .btn-send {
+    background: rgb(85 55 100);
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.wrapper.security_checker input[type="search"] {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #161616;
+    border: 1px solid #898989;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background: inherit;
+}
+
+.wrapper.security_checker .result {
+    background: radial-gradient(circle at 29% 68%, #252421, #141414 99%) !important;
+    width: 100%;
+}
+
+.wrapper.security_checker .result p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.wrapper.security_checker .result .true p:nth-of-type(2) {
+    color: #0fc400;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.wrapper.security_checker .result .dangerous p:nth-of-type(2) {
+    color: #f04e22;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.wrapper.security_checker .result .unknown p:nth-of-type(2) {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+/********************************************************************* Feedback */
+
+.wrapper.feedback {
+    min-height: 100vh;
+}
+
+.feedback .not-login {
+    margin-top: 6rem;
+}
+
+.feedback .not-login h1 {
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.feedback .not-login button {
+    background: rgb(85 55 100);
+    padding: 10px 60px;
+    font-size: 1.5rem;
+    border: 1px solid;
+    margin-top: 1.5rem;
+    letter-spacing: 1.5px;
+    cursor: text !important;
+}
+
+.feedback .not-login a {
+    margin-top: 1.5rem;
+    padding: 7px 14px;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+}
+
+.feedback .already-login {
+    margin-top: 2rem;
+}
+
+.feedback .already-login h2 {
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
+}
+
+.feedback .already-login .left {
+    border: 1px solid #fff;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.feedback .already-login .left input[type="search"] {
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #161616;
+    border: 1px solid #898989;
+    border-radius: .4rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background: inherit;
+    padding: 12px;
+}
+
+.feedback .already-login .left p {
+    letter-spacing: 1.1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+}
+
+.feedback .already-login .left .form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    position: unset;
+    margin-left: 0;
+}
+
+.feedback .already-login .right {
+    margin-top: 1.5rem;
+}
+
+.feedback .already-login .right p {
+    letter-spacing: 1.1px;
+    font-size: 1.15rem;
+}
+
+.feedback .already-login .right textarea {
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #161616;
+    border: 1px solid #898989;
+    border-radius: .4rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background: inherit;
+    padding: 12px;
+}
+
+.feedback .already-login .right .save-box {
+    border: 1px solid #fff;
+    height: 87px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.feedback .already-login .right .save-box .custom-control {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.feedback .already-login .right .save-box .custom-control .custom-input {
+    width: 20px;
+    height: 15px;
+    margin-right: .3rem;
+}
+
+.feedback .already-login .right .save-box .custom-control .custom-label {
+    margin-right: 2rem;
+    font-size: 1.15rem;
+}
+
+.wrapper.feedback .btn-send {
+    background: rgb(85 55 100);
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.wrapper.feedback .success-flash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper.feedback .success-flash .message {
+    padding: 2rem .5rem;
+    border: 1px solid;
+    border-color: #a5a5a5;
+    width: 1140px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 6px;
+    background: radial-gradient(circle at 29% 68%, #252421, #141414 99%) !important;
+}
+
+.wrapper.feedback .success-flash .message p {
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+}
+
+.wrapper.feedback .success-flash .message ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.wrapper.feedback .success-flash .message ul li a {
+    font-size: 1.5rem;
+}
+
+
+/********************************************************************* Activity */
+
+.wrapper-activity {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-activity .activity {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.wrapper-activity .activity .image-area {
+    max-width: 350px;
+}
+
+.wrapper-activity .activity .result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3rem;
+}
+
+.wrapper-activity .activity h1 {
+    margin-bottom: 2.95rem;
+    font-size: 3.2rem;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.wrapper-activity .activity .no-result {
+    width: 85%;
+}
+
+.wrapper-activity .activity .no-result p {
+    border: 1px solid #898989;
+    padding: 15px 0;
+    letter-spacing: 1.5px;
+    font-size: 1.35rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.wrapper-activity .activity .feedback-area {
+    width: 85%;
+    border: 1px solid;
+    border-color: #898989;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: scroll;
+    color: #fff;
+    padding: 2px 20px;
+}
+
+.wrapper-activity .activity .feedback-area .unstyle-list {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.wrapper-activity .activity .feedback-area .unstyle-list .feedback-link {
+    border: 1px solid;
+    border-color: #898989;
+    padding: 10px 10px;
+    letter-spacing: 1.45px;
+    border-radius: 6px;
+    width: 85%;
+}
+
+.wrapper-activity .activity .feedback-area .unstyle-list .feedback-link a {
+    color: #fff;
+}
+
+
+/********************************************************************* profile */
+
+.wrapper-profile {
+    margin-top: 4rem;
+    height: 100vh;
+}
+
+.wrapper-profile .profile {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.wrapper-profile .profile .image-area {
+    max-width: 350px;
+}
+
+.wrapper-profile .profile .profile-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3rem;
+}
+
+.wrapper-profile .profile .profile-form h1 {
+    margin-bottom: 2.95rem;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.wrapper-profile .profile .profile-form form label {
+    color: #e8e8e8;
+    letter-spacing: 1.5px;
+}
+
+.wrapper-profile .profile .profile-form form .form-control {
+    padding: 0.65rem .75rem;
+    background-color: rgb(235 235 235);
+}
+
+.wrapper-profile .profile .profile-form form .form-group .forgot-password {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: .5rem;
+    color: #9f9f9f;
+    font-size: .85rem;
+    letter-spacing: 1px;
+}
+
+.wrapper-profile .profile .profile-form form .form-group .btn-login {
+    padding: 6px 24px;
+    font-size: 18px;
+}
+
+.wrapper-profile .profile .profile-form form .form-group .btn-register {
+    background: rgb(85 55 100);
+    padding: 6px 24px;
+    font-size: 18px;
+}
+
+
+/********************************************************************* Make Responsive Design */
+
+
+/* Smart Phons */
+
+@media only screen and (min-width: 250px) and (max-width: 480px) {
+    /******** navbar page ********/
+    .navbar {
+        position: relative;
+    }
+    .navbar .navbar-collapse {
+        max-width: 270px;
+        margin-top: 10px;
+        padding: 5px 15px;
+        position: absolute;
+        top: 70px;
+        background: radial-gradient(circle at 29% 68%, #252421, #141414 99%) !important;
+        border-radius: 6px;
+        border: 1px solid;
+    }
+    .navbar .collapse .nav-link li {
+        padding-top: 15px;
+    }
+    .navbar .nav-auth {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /******** sign page ********/
+    .wrapper-sign .sign-in {
+        justify-content: center;
+    }
+    .wrapper-sign .sign-in .image-area {
+        display: none;
+    }
+    .wrapper-sign .sign-in .form-area h2 {
+        letter-spacing: inherit;
+    }
+    /******** footer page ********/
+    .footer .wrapper {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .wrapper .title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .footer .info {
+        flex-direction: column;
+    }
+    /******** home page ********/
+    .wrapper-home .home .logo {
+        display: none;
+    }
+    .wrapper-home .home .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper-home .home .content .download-extension img {
+        margin-left: 0 !important;
+    }
+    /******** about us page ********/
+    .wrapper.about-us {
+        margin-top: .3rem;
+    }
+    .wrapper.about-us h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .wrapper.about-us p {
+        font-size: 1.25rem;
+    }
+    .wrapper.about-us .image-area {
+        display: none;
+    }
+    /******** security  Checker page ********/
+    .wrapper.security_checker {
+        margin-top: 2.5rem;
+    }
+    .wrapper.security_checker h1 {
+        font-size: 2.5rem;
+    }
+    /******** user feedback page ********/
+    .feedback .not-login {
+        margin-top: 2.5rem;
+    }
+    .feedback .not-login button {
+        padding: inherit
+    }
+    .wrapper.feedback .success-flash .message p {
+        font-size: 1rem;
+    }
+    /******** user activity page ********/
+    .wrapper-activity .activity .result {
+        margin-left: 0;
+        align-items: flex-start;
+    }
+    .wrapper-activity .activity .image-area {
+        display: none
+    }
+    .wrapper-activity .activity h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .wrapper-activity .activity .no-result p {
+        padding: 10px 0;
+    }
+    .wrapper-activity .activity .no-result {
+        width: 100%;
+    }
+    .wrapper-activity .activity .feedback-area {
+        width: 100%;
+        padding: 0;
+    }
+    .wrapper-activity .activity .feedback-area .unstyle-list .feedback-link {
+        width: 100%;
+    }
+    /******** user profile page ********/
+    .wrapper-profile .profile .profile-form {
+        margin-left: 0;
+    }
+    .wrapper-profile .profile .image-area {
+        display: none;
+    }
+    .wrapper-profile .profile .profile-form h1 {
+        margin-bottom: 2.5rem;
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    /******** navbar page ********/
+    .navbar {
+        position: relative;
+    }
+    .navbar .navbar-collapse {
+        max-width: 270px;
+        margin-top: 10px;
+        padding: 5px 15px;
+        position: absolute;
+        top: 70px;
+        background: radial-gradient(circle at 29% 68%, #252421, #141414 99%) !important;
+        border-radius: 6px;
+        border: 1px solid;
+    }
+    .navbar .collapse .nav-link li {
+        padding-top: 15px;
+    }
+    .navbar .nav-auth {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /******** sign page ********/
+    .wrapper-sign .sign-in {
+        justify-content: center;
+    }
+    .wrapper-sign .sign-in .image-area {
+        display: none;
+    }
+    /******** footer page ********/
+    .footer .wrapper {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .wrapper .title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .footer .info {
+        flex-direction: column;
+    }
+    /******** home page ********/
+    .wrapper-home .home .logo {
+        display: none;
+    }
+    .wrapper-home .home .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper-home .home .content .download-extension img {
+        margin-left: 0 !important;
+    }
+    /******** about us page ********/
+    .wrapper.about-us {
+        margin-top: .3rem;
+    }
+    .wrapper.about-us h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .wrapper.about-us p {
+        font-size: 1.25rem;
+    }
+    .wrapper.about-us .image-area {
+        display: none;
+    }
+    /******** security  Checker page ********/
+    .wrapper.security_checker {
+        margin-top: 2.5rem;
+    }
+    .wrapper.security_checker h1 {
+        font-size: 2.5rem;
+    }
+    /******** user feedback page ********/
+    .feedback .not-login {
+        margin-top: 2.5rem;
+    }
+    .feedback .not-login button {
+        padding: inherit
+    }
+    .wrapper.feedback .success-flash .message p {
+        font-size: 1rem;
+    }
+    /******** user activity page ********/
+    .wrapper-activity .activity .result {
+        margin-left: 0;
+        align-items: flex-start;
+    }
+    .wrapper-activity .activity .image-area {
+        display: none
+    }
+    .wrapper-activity .activity h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .wrapper-activity .activity .no-result p {
+        padding: 10px 0;
+    }
+    .wrapper-activity .activity .no-result {
+        width: 100%;
+    }
+    .wrapper-activity .activity .feedback-area {
+        width: 100%;
+        padding: 0;
+    }
+    .wrapper-activity .activity .feedback-area .unstyle-list .feedback-link {
+        width: 100%;
+    }
+    /******** user profile page ********/
+    .wrapper-profile .profile .profile-form {
+        margin-left: 0;
+    }
+    .wrapper-profile .profile .image-area {
+        display: none;
+    }
+    .wrapper-profile .profile .profile-form h1 {
+        margin-bottom: 2.5rem;
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Medium Screen */
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /******** navbar page ********/
+    .navbar {
+        position: relative;
+    }
+    .navbar .navbar-collapse {
+        max-width: 270px;
+        margin-top: 10px;
+        padding: 5px 15px;
+        position: absolute;
+        top: 70px;
+        background: radial-gradient(circle at 29% 68%, #252421, #141414 99%) !important;
+        border-radius: 6px;
+        border: 1px solid;
+    }
+    .navbar .collapse .nav-link li {
+        padding-top: 15px;
+    }
+    .navbar .nav-auth {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /******** sign page ********/
+    .wrapper-sign .sign-in {
+        justify-content: center;
+    }
+    .wrapper-sign .sign-in .image-area {
+        display: none;
+    }
+    /******** home page ********/
+    .wrapper-home .home .logo {
+        display: none;
+    }
+    .wrapper-home .home .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper-home .home .content .download-extension img {
+        margin-left: 0 !important;
+    }
+    /******** about us page ********/
+    .wrapper.about-us {
+        margin-top: .3rem;
+    }
+    .wrapper.about-us h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .wrapper.about-us p {
+        font-size: 1.25rem;
+    }
+    .wrapper.about-us .image-area {
+        display: none;
+    }
+    /******** security  Checker page ********/
+    .wrapper.security_checker {
+        margin-top: 2.5rem;
+    }
+    .wrapper.security_checker h1 {
+        font-size: 2.5rem;
+    }
+    /******** user feedback page ********/
+    .feedback .not-login {
+        margin-top: 2.5rem;
+    }
+    .feedback .not-login button {
+        padding: inherit
+    }
+    .wrapper.feedback .success-flash .message p {
+        font-size: 1rem;
+    }
+    /******** user activity page ********/
+    .wrapper-activity .activity .result {
+        margin-left: 0;
+        align-items: flex-start;
+    }
+    .wrapper-activity .activity .image-area {
+        display: none
+    }
+    .wrapper-activity .activity h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .wrapper-activity .activity .no-result p {
+        padding: 10px 0;
+    }
+    .wrapper-activity .activity .no-result {
+        width: 100%;
+    }
+    .wrapper-activity .activity .feedback-area {
+        width: 100%;
+        padding: 0;
+    }
+    .wrapper-activity .activity .feedback-area .unstyle-list .feedback-link {
+        width: 100%;
+    }
+    /******** user profile page ********/
+    .wrapper-profile .profile .profile-form {
+        margin-left: 0;
+    }
+    .wrapper-profile .profile .image-area {
+        display: none;
+    }
+    .wrapper-profile .profile .profile-form h1 {
+        margin-bottom: 2.5rem;
+        font-size: 2.5rem;
+    }
+}
