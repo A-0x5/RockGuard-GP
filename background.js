@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // API Key for VirusTotal
 const API_KEY = '16476e088d461e487a2a930e6366eed3a4df29c311d06e81a9ae1db0aed0415b'; 
 
@@ -141,7 +140,5 @@ function sleep(ms) {
 
 
 
-=======
->>>>>>> 300775e1ee3ed157559b3ef46805858649dece24
 
 
