@@ -3,7 +3,7 @@
       <div class="container">
             <div class="sign-in">
                   <div class="image-area">
-                        <img class="img-fluid" src="../images/login-image.png" alt="image">
+                        <img class="img-fluid" src="./images/login-image.png" alt="image">
                   </div>
                   <!-- start form -->
                   <div class="form-area">
