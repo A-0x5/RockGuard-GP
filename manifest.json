@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "RockGuard Original",
+  "name": "RockGuard",
   "description": "Extension tool to detect phishing websites",
   "version": "1.0",
   "action": {
