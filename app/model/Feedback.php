@@ -71,14 +71,5 @@ class Feedback
             return $statement->fetch();
       } //-- end find feedback
 
-      /**
-       * check
-       *
-       * @param  int $id
-       * @return mixed
-       */
-      public static function check(int $id)
-      {
-            //TODO
-      } //-- end check function
+      
 }//-- end class Feedback

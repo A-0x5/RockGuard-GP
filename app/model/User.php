@@ -10,17 +10,7 @@ use RockGuard\app\model\Auth;
 class User
 {
 
-      /**
-       * get all users
-       *
-       * @return mixed
-       */
-      public static function all()
-      {
-            // TODO
-      } //-- end all function
-
-
+      
       /**
        * find
        *
@@ -99,9 +89,5 @@ class User
             return $statement->fetchColumn();
       }//-- end check_email_before_update function
 
-      // delete user
-      public static function destroy()
-      {
-            // TODO
-      }
+     
 }//-- end user model
