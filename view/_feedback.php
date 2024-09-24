@@ -65,9 +65,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <input type="checkbox" class="form-check-input" id="exampleCheck4" name="results[]" value="Mimicking a legitimate website">
                                     <label class="form-check-label text-white" for="exampleCheck4">Mimicking a legitimate website</label>
                                 </div>
+                                <div class="mb-3 mt-1">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck5" name="results[]" value="Nothing suspicious">
+                                    <label class="form-check-label text-white" for="exampleCheck5">Nothing suspicious</label>
+                                </div>
                                 <div class="mt-1">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck5" name="results[]" value="Request for sensitive information">
-                                    <label class="form-check-label text-white" for="exampleCheck5">Request for sensitive information</label>
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck6" name="results[]" value="Request for sensitive information">
+                                    <label class="form-check-label text-white" for="exampleCheck6">Request for sensitive information</label>
                                 </div>
                                 <?php echo !empty(error('result')) ? "<small class='error invalid-feedback d-block'>" . error('result') . "</small>" : '' ?>
                             </div>
