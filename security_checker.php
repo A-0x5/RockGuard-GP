@@ -2,19 +2,23 @@
 
 namespace RockGuard\sign_in;
 
+require_once 'app/model/Auth.php';
+use RockGuard\app\model\Auth;
+
 // Open Buffer
 ob_start();
 
-// session Start
+// Start session
 @session_start();
 
-// make navbar to show if there is navigation on this page or not
+
+// Make navbar to show if there is navigation on this page or not
 $navbar = true;
 
-// make var to show if The language us arabic or english
+// Make var to show if the language is Arabic or English
 $lang = 'en';
 
-// make the title of the page
+// Make the title of the page
 $page_title = 'Rock Guard | Security Checker';
 
 // Call connect File
@@ -32,3 +36,4 @@ include_once $template . 'footer.php';
 ob_end_flush();
 
 ?>
+

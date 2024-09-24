@@ -1,13 +1,49 @@
+<?php
+
+require_once 'app/model/Auth.php';
+require_once 'app/controller/SecurityCheckerController.php';
+require_once 'app/model/Session.php';
+
+use RockGuard\app\controller\SecurityCheckerController;
+use RockGuard\app\model\Auth;
+use RockGuard\app\model\Session;
+
+// Check if the user is logged in
+if (!Auth::check()) {
+    ?>
+    <div class="container">
+        <div class="wrapper feedback">
+            <div class="not-login d-block">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-white">You must be logged in to use the security checker</h1>
+                        <div class="col-12 text-center">
+                            <button class="btn text-white">Please sign in to continue!</button>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a class="btn btn-dark text-white mr-0" href="sign-in.php">Click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+    return; // End the script here if the user is not logged in
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    SecurityCheckerController::store(); // Use the store function from SecurityCheckerController
+}
+
+?>
 <!-- Start with image -->
 <div class="container p-0">
     <div class="wrapper security_checker">
-        <!-- Start form -->
         <div class="content">
-            <!-- Heading -->
             <div class="col-12 mb-5">
                 <h1 class="text-white text-center">Start the free security Checker</h1>
             </div>
-            <!-- Start form -->
             <form class="col-12 mb-4" action="" method="POST">
                 <div class="input-group">
                     <input name="url" style="padding:10px" class="form-control" type="search" 
@@ -21,64 +57,23 @@
             </form>
 
             <?php
+            // Check if the form was submitted and the URL is set
             if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['url'])) {
-                $api_key = '16476e088d461e487a2a930e6366eed3a4df29c311d06e81a9ae1db0aed0415b'; // API key
                 $url_to_check = $_POST['url'];
-
-                // Set up cURL request
-                $ch = curl_init();
-                curl_setopt($ch, CURLOPT_URL, 'https://www.virustotal.com/vtapi/v2/url/report');
-                curl_setopt($ch, CURLOPT_POST, 1);
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_POSTFIELDS, array(
-                    'apikey' => $api_key,
-                    'resource' => $url_to_check,
-                    'scan' => 1 // Request a scan if no previous data is available
-                ));
-
-                // Execute the request
-                $response = curl_exec($ch);
-
-                // Check if there was an error executing cURL
-                if ($response === false) {
-                    echo '<div class="alert alert-danger">Error: ' . curl_error($ch) . '</div>';
-                    curl_close($ch);
-                    exit();
-                }
-
-                curl_close($ch);
-
-                // Decode the response to JSON format
-                $result = json_decode($response, true);
-
-                // Check if the response is empty or invalid
-                if (is_null($result)) {
-                    echo '<div class="alert alert-danger">Error: Invalid API response</div>';
-                    exit();
-                }
+                $result = SecurityCheckerController::scanUrlWithVirusTotal($url_to_check); // Use the scan function
 
                 echo '<div class="col-12 col-md-6 m-md-auto">';
                 echo '<div class="result">';
 
-                // Check the response_code and ensure the response is valid
-                if (isset($result['response_code']) && $result['response_code'] == 1) {
-                    if (isset($result['positives']) && $result['positives'] > 0) {
-                        // Dangerous link
-                        echo '<div class="dangerous d-block">';
-                        echo '<img src="images/dangerous.png" alt="dangerous result" class="img-fluid">';
-                        echo '</div>';
-                    } else {
-                        // Safe link
-                        echo '<div class="true d-block">';
-                        echo '<img src="images/safe.png" alt="safe result" class="img-fluid">';
-                        echo '</div>';
-                    }
+                if ($result === 0) {
+                    // Dangerous link
+                    echo '<div class="dangerous d-block">';
+                    echo '<img src="images/dangerous.png" alt="dangerous result" class="img-fluid">';
+                    echo '</div>';
                 } else {
-                    // Unknown link
-                    echo '<div class="unknown text-center p-3 d-block" style="flex-direction: column;align-items: center;">';
-                    echo '<p>Your URL is:</p>';
-                    echo '<p>Unknown</p>';
-                    echo '<p class="m-0">Watch out! No data available for this URL.</p>';
+                    // Safe link
+                    echo '<div class="true d-block">';
+                    echo '<img src="images/safe.png" alt="safe result" class="img-fluid">';
                     echo '</div>';
                 }
 
@@ -89,4 +84,7 @@
         </div>
     </div>
 </div>
+
+
+
 
