@@ -34,7 +34,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                                           <input type="file" name="image" id="image" accept="image/*" onchange="loadFile(event)" style="display: none;">
                                     </div>
                                     <div class="form-group mt-4">
-                                          <label for="email">NAME</label>
+                                          <label for="name">NAME</label>
                                           <input class="form-control <?php echo error('name') != false ? 'is-invalid' : '' ?>" type="text" id="name" name="name" placeholder="Enter Name" value="<?php echo old('name', Auth::user()['name']) ?>">
                                           <?php echo error('name') != false  ? "<small class='error invalid-feedback' >" . error('name') . "</small>" : '' ?>
                                     </div>

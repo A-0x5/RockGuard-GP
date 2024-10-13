@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <label class="form-check-label text-white" for="exampleCheck2">No content information</label>
                                 </div>
                                 <div class="mb-3 mt-1">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck3" name="results[]">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck3" name="results[]"value="Urgent language">
                                     <label class="form-check-label text-white" for="exampleCheck3">Urgent language</label>
                                 </div>
                                 <div class="mb-3 mt-1">
