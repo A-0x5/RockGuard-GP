@@ -61,9 +61,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                       <input type="checkbox" class="form-check-input" <?php echo in_array('Mimicking a legitimate website', $feedback_results) ? 'checked' : '' ?> id="exampleCheck4" name="results[]" value="Mimicking a legitimate website">
                                                       <label class="form-check-label text-white" for="exampleCheck4">Mimicking a legitimate website</label>
                                                 </div>
-                                                <div class="mt-1">
+                                                <div class="mb-3 mt-1">
                                                       <input type="checkbox" class="form-check-input" <?php echo in_array('Request for sensitive information', $feedback_results) ? 'checked' : '' ?> id="exampleCheck5" name="results[]" value="Request for sensitive information">
                                                       <label class="form-check-label text-white" for="exampleCheck5">Request for sensitive information</label>
+                                                </div>
+                                                <div class="mt-1">
+                                                      <input type="checkbox" class="form-check-input" <?php echo in_array('Nothing suspicious', $feedback_results) ? 'checked' : '' ?> id="exampleCheck6" name="results[]" value="Nothing suspicious">
+                                                      <label class="form-check-label text-white" for="exampleCheck6">Nothing suspicious</label>
                                                 </div>
                                                 <?php echo !empty(error('result'))  ? "<small class='error invalid-feedback d-block' >" . error('result') . "</small>" : '' ?>
                                           </div>
