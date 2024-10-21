@@ -1,5 +1,5 @@
 // API Key for VirusTotal
-const API_KEY = '16476e088d461e487a2a930e6366eed3a4df29c311d06e81a9ae1db0aed0415b'; 
+const API_KEY = ''; 
 
 // URL for the local API that checks the database
 const API_DB_URL = 'http://localhost/rockguard/api.php'; 

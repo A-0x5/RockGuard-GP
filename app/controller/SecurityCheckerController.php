@@ -20,7 +20,7 @@ class SecurityCheckerController
      */
     public static function scanUrlWithVirusTotal($url)
     {
-        $apiKey = '16476e088d461e487a2a930e6366eed3a4df29c311d06e81a9ae1db0aed0415b'; // API key
+        $apiKey = ''; // API key
 
         // API endpoint to scan the URL
         $apiUrl = "https://www.virustotal.com/vtapi/v2/url/report?apikey={$apiKey}&resource=" . urlencode($url);
